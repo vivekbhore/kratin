@@ -1,0 +1,57 @@
+{
+    "name": "react-admin-dashboard",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "axios": "^0.21.1",
+        "bootstrap": "^5.0.2",
+        "country-state-city": "^3.0.1",
+        "generate-password": "^1.6.1",
+        "moment": "^2.29.1",
+        "prop-types": "^15.7.2",
+        "react": "^16.13.1",
+        "react-bootstrap": "^1.6.1",
+        "react-burger-menu": "^2.6.13",
+        "react-collapsible-content": "^1.0.0",
+        "react-country-region-selector": "^3.3.0",
+        "react-datepicker": "^4.2.1",
+        "react-dom": "^16.8.6",
+        "react-google-charts": "^3.0.15",
+        "react-helmet": "^6.1.0",
+        "react-hot-toast": "^2.1.0",
+        "react-jss": "^10.4.0",
+        "react-radio-group": "^3.0.3",
+        "react-redux": "^7.2.4",
+        "react-router-bootstrap": "^0.25.0",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "3.4.3",
+        "react-select": "^4.3.1",
+        "react-svg-line-chart": "^2.0.1",
+        "reactstrap": "^8.9.0",
+        "redux": "^4.1.0",
+        "redux-thunk": "^2.3.0",
+        "simple-flexbox": "^2.3.1",
+        "sweetalert2": "^11.0.20"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}
