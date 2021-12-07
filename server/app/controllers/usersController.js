@@ -221,8 +221,8 @@ module.exports.getResetPasswordLink = asyncHandler(async (req, res) => {
 
       // authenticate
       auth: {
-        user: "bhoresudhakar26@gmail.com",
-        pass: "kalyanibhore9008", //Gmail Account Password,
+        user: "vsbtempvsb@gmail.com",
+        pass: "F**kexcuses@1239008", //Gmail Account Password,
       },
     });
 
@@ -238,7 +238,7 @@ module.exports.getResetPasswordLink = asyncHandler(async (req, res) => {
     const url = `${process.env.FRONTEND}/createNewPassword/${token}`;
 
     const emailSent = await transporter.sendMail({
-      from: "bhoresudhakar26@gmail.com",
+      from: "vsbtempvsb@gmail.com",
       to: email,
       subject: "Reset Password",
       text: "Reset your password for React ToDo app.",

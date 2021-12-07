@@ -6,16 +6,16 @@ require('dotenv').config()
 const Customer = require('../models/customer')
 // Step 1
 
-let transporter = nodemailer.createTransport({
+let transporter = nodemailer.createTransport({ 
   //   service: "gmail",
   host: "smtp.gmail.com",
   auth: {
-    user: "bhoresudhakar26@gmail.com",
-    pass: "kalyanibhore9008",
+    user: "vsbtempvsb@gmail.com",
+    pass: "F**kexcuses@1239008",
   },
 });
 let mailOptions = {
-  from: "bhoresudhakar26@gmail.com",
+  from: "vsbtempvsb@gmail.com",
   to: "",
   subject: "",
   text: "",

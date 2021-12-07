@@ -1,6 +1,10 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 
+import { Section, Title, Article, Prop, list } from "../../../components/NewLoadBar/generic";
+
+import ReactLoading from "react-loading";
+
 import { Container, Row, Col } from 'reactstrap';
 
 import Chart from 'react-google-charts';
@@ -55,7 +59,8 @@ function Reports(props) {
         <Container>
             <h3 className='d-flex justify-content-center mb-3'>Data on Pending Tickets</h3>
             <Row>
-                <Col md='6'>
+              {piedata.length ?(
+                    <Col md='6'>
                     <Chart
                         chartType='PieChart'
                         width='100%'
@@ -64,6 +69,17 @@ function Reports(props) {
                         options={options}
                     />
                 </Col>
+              ):(
+                <Section>
+                {/* <Title>React Loading</Title> */}
+                {list.map(l => (
+                  <Article key={l.prop}>
+                    <ReactLoading type={l.prop} color="#fff" />
+                    {/* <Prop>{l.name}</Prop> */}
+                  </Article>
+                ))}
+              </Section>
+              )}
 
                 <Col md='6'>
                     <Chart
@@ -102,6 +118,6 @@ const mapsStateToProps = (state) => {
         tickets: state.tickets,
         departments: state.departments
     };
-};
+}; 
 
 export default connect(mapsStateToProps)(Reports);

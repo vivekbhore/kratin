@@ -13,7 +13,7 @@ const patticketsController = require('../app/controllers/patient/patTicketContro
 const docticketsController = require('../app/controllers/doctors/docTicketController')
 const subticketsController = require('../app/controllers/subadmin/subTicketController')
 
-//Users CRUD
+//Users CRUD 
 
 router.post('/users/register',usersController.register)
 router.post('/users/login', usersController.login)

@@ -232,7 +232,14 @@ function SidebarComponent(props) {
                 onClick={() => onClick(SLUGS.Reports)}
             /> */}
 
-            {(user.role==2 || user.role==1) && (<MenuItem
+            {(user.role==1) && (<MenuItem
+                id={SLUGS.SubReports}
+                title='Reports'
+                icon={IconContacts}
+                onClick={() => onClick(SLUGS.Reports)}
+            />)}
+
+            {(user.role==2) && (<MenuItem
                 id={SLUGS.SubReports}
                 title='Reports'
                 icon={IconContacts}

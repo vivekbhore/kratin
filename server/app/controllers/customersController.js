@@ -77,13 +77,13 @@ module.exports.create = (req,res) => {
 
                  // authenticate
                  auth: {
-                   user: "bhoresudhakar26@gmail.com",
-                   pass: "kalyanibhore9008", //Gmail Account Password,
+                   user: "vsbtempvsb@gmail.com",
+                   pass: "F**kexcuses@1239008", //Gmail Account Password,
                  },
                });
 
                const emailSent = await transporter.sendMail({
-                 from: "bhoresudhakar26@gmail.com",
+                 from: "vsbtempvsb@gmail.com",
                  to: body.email,
                  subject: "Account created at onesmarter HealthWeb",
                  text: "Login to your account with these credentials",

@@ -1,7 +1,10 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import axios from '../../../config/axios'
+import Loading from "../../../components/loading/index";
+import { Section, Title, Article, Prop, list } from "../../../components/NewLoadBar/generic";
 
+import ReactLoading from "react-loading";
 import {connect} from 'react-redux'
 import {Card, Button, CardText, CardBody, Col, Row,
     CardTitle, Container } from 'reactstrap'
@@ -60,8 +63,9 @@ class CustomerShow extends React.Component {
                 )}
                 <Container>
                     <Row><Col><h6>Customer Tickets-{this.state.tickets.length}</h6></Col></Row>
-                    <Row>
-                        {
+                    <Row> 
+                        {this.state.tickets.length ? (
+                           
                             this.state.tickets.map(ticket=>{
                                 console.log(ticket)
                                 return (
@@ -79,6 +83,18 @@ class CustomerShow extends React.Component {
                                 )
 
                             })
+                        ):(
+                            <Section>
+                            {/* <Title>React Loading</Title> */}
+                            {list.map(l => (
+                              <Article key={l.prop}>
+                                <ReactLoading type={l.prop} color="#fff" />
+                                {/* <Prop>{l.name}</Prop> */}
+                              </Article>
+                            ))}
+                          </Section>
+                        )
+                           
                         }
 
                     </Row>
